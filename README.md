@@ -1,2 +1,5 @@
-# clivisui-next
-The next clivisui
+# ClivisuiNext
+
+##Production build
+
+´ng build --aot --env=prod --prod --output-path dist´
