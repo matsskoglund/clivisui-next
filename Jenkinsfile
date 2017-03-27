@@ -4,6 +4,6 @@ node {
     }
     stage ("build"){    
         sh "npm install"
-        sh "ng build 
+        sh "ng build"" 
     }
 }
