@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import {Http, Response} from '@angular/http';
-
-import {interval} from 'rxjs/Observable/interval';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/observable/interval';
 
