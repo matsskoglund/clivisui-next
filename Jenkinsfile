@@ -3,6 +3,7 @@ node {
         checkout scm 
     }
     stage ("build"){    
-        sh "ng build"
+        sh "npm install"
+        sh "ng build 
     }
 }
