@@ -8,6 +8,6 @@ node {
     }
     stage ("publish"){
         sh "whoami"
-        sh "scp dist/* build@192.168.1.20:/volume1/web/nas"
+        sh "scp nas/* build@192.168.1.20:/volume1/web/nas"
     }
 }
