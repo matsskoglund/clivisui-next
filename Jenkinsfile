@@ -8,6 +8,6 @@ node {
     }
     stage ("publish"){
         sh "whoami"
-        sh "scp nas/* -i .ssh/id_rsa 192.168.1.20:/volume1/web/nas/"
+        sh "scp -i .ssh/id_rsa nas/* 192.168.1.20:/volume1/web/nas/"
     }
 }
