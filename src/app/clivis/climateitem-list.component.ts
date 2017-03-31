@@ -5,8 +5,7 @@ import { IClimateItem } from './climateItem';
 import { Subscription } from 'rxjs/Subscription';
 
 @Component({
-    templateUrl:'./climateItem-list.component.html',
-    //styleUrls: ['app/products/product-list.component.css']
+    templateUrl:'./climateItem-list.component.html',    
 })
 export class ClimateItemListComponent implements OnInit, OnDestroy{
     private sub: any;

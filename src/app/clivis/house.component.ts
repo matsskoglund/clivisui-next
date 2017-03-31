@@ -1,7 +1,7 @@
 import { Component, ElementRef, OnChanges,Input, OnInit,ViewChild  } from '@angular/core';
 
 @Component({
-    selector: 'barchart2',
+    selector: 'house',
     styles: [`
         h1.title {
             text-align: center;
@@ -15,7 +15,7 @@ import { Component, ElementRef, OnChanges,Input, OnInit,ViewChild  } from '@angu
       </div>
   `
 })
-export class Barchart2Component implements OnInit,OnChanges{
+export class HouseComponent implements OnInit,OnChanges{
     @ViewChild('canvas') canvasRef:ElementRef;
     private canvas: any;
     private done:boolean = false;
@@ -29,15 +29,15 @@ export class Barchart2Component implements OnInit,OnChanges{
     @Input() timeStamp: string;
 
     constructor() {
-        console.log("Barchart2Component constructor: width: ", this.width, ", height: ", this.height, ' this.canvas: ', this.canvas);
+        console.log("HouseComponent constructor: width: ", this.width, ", height: ", this.height, ' this.canvas: ', this.canvas);
     }
 
     ngOnInit() {
-        console.log("Barchart2Component ngOnInit: width: ", this.width, ", height: ", this.height,' this.canvas: ', this.canvas);
+        console.log("HouseComponent ngOnInit: width: ", this.width, ", height: ", this.height,' this.canvas: ', this.canvas);
     }
 
     ngAfterViewInit() {
-        console.log("Barchart2Component ngAfterViewInit: width: ", this.width, ", height: ", this.height, ' this.canvas: ', this.canvas);
+        console.log("HouseComponent ngAfterViewInit: width: ", this.width, ", height: ", this.height, ' this.canvas: ', this.canvas);
         this.canvas = this.canvasRef.nativeElement;
         this.canvas.width = this.width;
         this.canvas.height = this.height;       
@@ -145,13 +145,13 @@ ctx.lineTo(600+deltaX,300 +  deltaY);
 // Tak
 ctx.lineTo(300+deltaX,0  +  deltaY);
 
-// �ver till startpunkt
+// Över till startpunkt
 ctx.lineTo(300+deltaXB,0 +  deltaYB);
 
 ctx.stroke();
 
 
-// f�rgrund
+// förgrund
 
 // Tak
 ctx.moveTo(0 + deltaX,300 +  deltaY);

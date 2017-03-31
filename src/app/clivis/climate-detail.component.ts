@@ -81,17 +81,5 @@ export class ClimateDetailComponent implements OnInit, OnDestroy {
         this.sub.unsubscribe();
         this.obs.unsubscribe();
         console.log('Unsubscribe');
-    }
-
-      /* ngAfterViewInit() {
-        console.log("Barchart2Component ngAfterViewInit: width: ", this.width, ", height: ", this.height, ", colors: ", this.colors, ' this.canvas: ', this.canvas);
-        this.canvas = this.canvasRef.nativeElement;
-        this.canvas.width = this.width;
-        this.canvas.height = this.height;
-        this.getClimateItem("Nibe");
-        //this.draw2();
-        
-    }*/
-
-
+    }   
 }

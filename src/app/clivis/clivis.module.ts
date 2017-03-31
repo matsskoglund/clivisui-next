@@ -5,13 +5,13 @@ import { CommonModule } from '@angular/common';
 import { ClimateItemService } from './climateItem.service';
 import { ClimateItemListComponent } from './climateitem-list.component';
 import { ClimateDetailComponent} from './climate-detail.component';
-import {Barchart2Component} from "./barchart2.component";
+import {HouseComponent} from "./house.component";
 
 @NgModule({
     declarations: [
         ClimateItemListComponent,
         ClimateDetailComponent,
-        Barchart2Component
+        HouseComponent
     ],
     imports:[
         FormsModule,
