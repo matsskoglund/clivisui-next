@@ -218,7 +218,7 @@ ctx.fillStyle="#000000";
 ctx.fillText(outdoor,100,130);
 
 ctx.fillText(indoor,250,575);  
-ctx.font = "20px Arial";
+ctx.font = "16px Arial";
 let tid = this.timeStamp.substr(11,5);
 let hour:number = parseInt(tid.substr(0,2)) + 2;
 let min:string = tid.substr(3,2);
@@ -226,7 +226,7 @@ let min:string = tid.substr(3,2);
 let tidStr:string = hour.toString() + ':' + min;
 
 
-ctx.fillText(tidStr,375,800);       }
+ctx.fillText("Senast uppdaterad: " + tidStr,300,800);       }
     }
 
 }
