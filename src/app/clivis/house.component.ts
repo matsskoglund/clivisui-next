@@ -224,7 +224,7 @@ export class HouseComponent implements OnInit,OnChanges{
         let tidStr:string = hour.toString() + ':' + min;
 
 
-        ctx.fillText("Senast uppdaterad: " + tidStr,300,800);       }
+        ctx.fillText("Uppdaterad: " + tidStr,300,800);       }
     }
 
 }
