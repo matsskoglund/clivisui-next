@@ -14,7 +14,6 @@ import { IClimateItem } from './climateItem';
 export class ClimateItemService{
     private _productUrl = 'api/products/products.json';
     private _clivisUrl = 'http://clivis.abolint.se:5050/api/climate/Reading';
- //private _clivisUrl = 'http://192.168.1.33:5050/api/climate/Ping';
 
     constructor(private _http: Http){}
 
