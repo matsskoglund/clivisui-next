@@ -13,16 +13,16 @@ import { IClimateItem } from './climateItem';
 @Injectable()
 export class ClimateItemService{
     private _productUrl = 'api/products/products.json';
-    private _clivisUrl = 'http://clivis.abolint.se:5050/api/climate/Reading';
+    private _clivisUrl = 'http://clivis.skoglund.io/api/climate/Reading';
 
     constructor(private _http: Http){}
 
    getClimateItem(source:string):Observable<IClimateItem>{
-       let clivisUrl:string = 'http://clivis.abolint.se:5050/api/climate/Reading'
+       let clivisUrl:string = 'http://clivis.skoglund.io/api/climate/Reading'
        if(source === 'Nibe')
-            clivisUrl = 'http://clivis.abolint.se:5050/api/climate/Nibe';
+            clivisUrl = 'http://clivis.skoglund.io/api/climate/Nibe';
         else if(source === 'Netatmo')
-            clivisUrl = 'http://clivis.abolint.se:5050/api/climate/Netatmo';
+            clivisUrl = 'http://clivis.skoglund.io/api/climate/Netatmo';
 
               
 
