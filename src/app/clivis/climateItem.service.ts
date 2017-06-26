@@ -13,7 +13,7 @@ import { IClimateItem } from './climateItem';
 @Injectable()
 export class ClimateItemService{
     private _productUrl = 'api/products/products.json';
-    private _clivisUrl = 'https://clivis.skoglund.io/api/climate/Reading';
+    private _clivisUrl = 'https://clivis.hem.skoglund.io/api/climate/Reading';
 
     constructor(private _http: Http){}
 
