@@ -74,8 +74,10 @@ export class HouseComponent implements OnInit,OnChanges{
 
             if (outdoor > 24) {
                 grd.addColorStop(1, "crimson");
-            } else if ((outdoor <= 24) && (outdoor > 15)) {
-                grd.addColorStop(1, "lightgreen");
+            } else if ((outdoor <= 24) && (outdoor > 20)) {
+              grd.addColorStop(1, "green");
+            } else if ((outdoor <= 20) && (outdoor > 15)) {
+                grd.addColorStop(1, "red");
             } else if ((outdoor <= 15) && (outdoor > 0)) {
                 grd.addColorStop(1, "PaleTurquoise");
             } else if ((outdoor <= 0) && (outdoor > -5)) {
